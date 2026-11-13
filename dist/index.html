@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111210">
+  <meta name="description" content="个人视频作品集：短剧与系列短视频、TVC、MV。">
+  <title>个人视频作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23111210'/%3E%3Cpath d='M25 17L47 32 25 47Z' fill='%23e46c45'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="vendor/hls.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#shorts">跳到作品</a>
+  <header class="site-header">
+    <h1><a class="brand" href="#top">个人视频作品集</a></h1>
+    <nav aria-label="作品分类">
+      <a href="#shorts" data-section="shorts">短剧 / 系列短视频 <sup>04</sup></a>
+      <a href="#tvc" data-section="tvc">TVC <sup>05</sup></a>
+      <a href="#mv" data-section="mv">MV <sup>01</sup></a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="work-section wrap" id="shorts" aria-labelledby="shorts-title">
+      <div class="section-heading"><h2 id="shorts-title">短剧 / 系列短视频<span>04</span></h2></div>
+      <div class="film-grid story-grid" id="shorts-grid"></div>
+    </section>
+    <section class="commercial-section" id="tvc" aria-labelledby="tvc-title"><div class="wrap work-section">
+      <div class="section-heading"><h2 id="tvc-title">TVC<span>05</span></h2></div>
+      <div class="film-grid tvc-grid" id="tvc-grid"></div>
+    </div></section>
+    <section class="work-section wrap mv-section" id="mv" aria-labelledby="mv-title">
+      <div class="section-heading"><h2 id="mv-title">MV<span>01</span></h2></div>
+      <div class="film-grid mv-grid" id="mv-grid"></div>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer"><a href="#top">回到顶部 ↑</a></footer>
+
+  <dialog class="player-dialog" id="player" aria-labelledby="player-title">
+    <div class="player-shell"><div class="player-top"><div><span id="player-category" class="eyebrow"></span><h2 id="player-title"></h2></div><button class="close-player" id="close-player" aria-label="关闭播放器"><span aria-hidden="true">×</span></button></div>
+      <div class="video-stage"><video id="video" controls controlslist="nodownload" playsinline preload="none"></video><div class="video-message" id="video-message" role="status" hidden></div></div>
+      <div class="player-bottom"><button id="next-film">下一部作品 <span aria-hidden="true">→</span></button></div>
+    </div>
+  </dialog>
+</body>
+</html>

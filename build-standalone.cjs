@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const vm=require('node:vm');
+const dist=path.join(__dirname,'dist');
+const css=fs.readFileSync(path.join(dist,'styles.css'),'utf8');
+let js=fs.readFileSync(path.join(dist,'app.js'),'utf8');
+let html=fs.readFileSync(path.join(dist,'index.html'),'utf8');
+const posters=Object.fromEntries(fs.readdirSync(path.join(dist,'posters')).filter(f=>f.endsWith('.jpg')).map(file=>[path.basename(file,'.jpg'),'data:image/jpeg;base64,'+fs.readFileSync(path.join(dist,'posters',file)).toString('base64')]));
+js=js.replace('src="posters/${f.id}.jpg"','src="${embeddedPosters[f.id]}"').replace("video.poster='posters/'+film.id+'.jpg'","video.poster=embeddedPosters[film.id]").replace("return 'videos/'+f.id+'.mp4'","return 'film-portfolio/dist/videos/'+f.id+'.mp4'");
+js='const embeddedPosters='+JSON.stringify(posters)+';\n'+js;
+new vm.Script(js);
+html=html.replace('<link rel="stylesheet" href="styles.css">','<style>'+css+'</style>').replace('<script defer src="vendor/hls.min.js"></script>','').replace('<script defer src="app.js"></script>','').replace('</body>','<script>'+js+'</script>\n</body>');
+const output=path.join(path.dirname(__dirname),'影像作品集.html');
+fs.writeFileSync(output,html);
+console.log(JSON.stringify({file:output,bytes:Buffer.byteLength(html),posters:Object.keys(posters).length}));

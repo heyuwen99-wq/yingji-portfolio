@@ -1,0 +1,13 @@
+.git/
+.openai/
+.vercel/
+.env*
+node_modules/
+dist/videos/
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.zip
+test/
+deployment-files.json

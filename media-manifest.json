@@ -1,0 +1,92 @@
+[
+  {
+    "id": "nile",
+    "title": "尼罗秘语",
+    "category": "shorts",
+    "original_file": "11月13日.mp4",
+    "path": "videos/nile.mp4",
+    "bytes": 270327158,
+    "sha256": "145b38b58dcc11af9a41d0b09acdf2033ef585d3a6280f25588eab833d279931"
+  },
+  {
+    "id": "citylights",
+    "title": "灯火人家",
+    "category": "shorts",
+    "original_file": "19937_raw.MP4",
+    "path": "videos/citylights.mp4",
+    "bytes": 195014269,
+    "sha256": "acce20d39497f86a4138b722a972ebd201b6da9f3ed0cfb14e99b005cdffa7c2"
+  },
+  {
+    "id": "fashion",
+    "title": "霓裳之下",
+    "category": "shorts",
+    "original_file": "290_raw.MP4",
+    "path": "videos/fashion.mp4",
+    "bytes": 172769836,
+    "sha256": "ef24d4e91fe2d37ab4bcc9157f5ff5f64426d44a4d15bc48392c071bc3018b0c"
+  },
+  {
+    "id": "lantern",
+    "title": "提灯入梦",
+    "category": "shorts",
+    "original_file": "4674.MP4",
+    "path": "videos/lantern.mp4",
+    "bytes": 44191135,
+    "sha256": "992e2bc5bb8e687a1138346aac61c97b4d3c995b594be6a2050371b0b392a9aa"
+  },
+  {
+    "id": "orchid",
+    "title": "紫境幽兰",
+    "category": "tvc",
+    "original_file": "3319.MP4",
+    "path": "videos/orchid.mp4",
+    "bytes": 7603578,
+    "sha256": "09624f4cb4a7f06f74a2c7f269025e8042043b17df15338ae80662ce7291ade0"
+  },
+  {
+    "id": "rouge",
+    "title": "一抹锋芒",
+    "category": "tvc",
+    "original_file": "5477.MP4",
+    "path": "videos/rouge.mp4",
+    "bytes": 6069767,
+    "sha256": "777586df8e45c5b2f7607ae9c085fb4fcf28c15fdb8a215acf3af74cd8b0de70"
+  },
+  {
+    "id": "moon",
+    "title": "月满大唐",
+    "category": "tvc",
+    "original_file": "11月13日 (1).mp4",
+    "path": "videos/moon.mp4",
+    "bytes": 81105159,
+    "sha256": "26793fbc44320b8244fb29de3b9b6e337fb4c0a5f1ee281c75832f1d5d18362c"
+  },
+  {
+    "id": "coffee",
+    "title": "一瞬醒神",
+    "category": "tvc",
+    "original_file": "5618.MP4",
+    "path": "videos/coffee.mp4",
+    "bytes": 8544693,
+    "sha256": "2d779260a59e90265f3c81f58a47c013e5d895a3da3eaa6ea89efc05d064d978"
+  },
+  {
+    "id": "zongzi",
+    "title": "粽游山海",
+    "category": "tvc",
+    "original_file": "飞书20261113-231403.mp4",
+    "path": "videos/zongzi.mp4",
+    "bytes": 15848998,
+    "sha256": "ff5fdb877e8f0ef9a698a565b37af44e2b17c2912918361d9688c93c9e9632ad"
+  },
+  {
+    "id": "sweetdream",
+    "title": "甜梦舞台",
+    "category": "mv",
+    "original_file": "6536.MP4",
+    "path": "videos/sweetdream.mp4",
+    "bytes": 27426077,
+    "sha256": "2b2fde4229f384f25e0b4000925b2b964b35f5fcabdf40815293d29c7e8df931"
+  }
+]
